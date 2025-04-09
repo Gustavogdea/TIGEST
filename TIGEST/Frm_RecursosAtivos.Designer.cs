@@ -37,19 +37,6 @@
             this.Menu_Sair = new System.Windows.Forms.ToolStripMenuItem();
             this.Dgv_DataRecursos = new System.Windows.Forms.DataGridView();
             this.Gpr_FiltroData = new System.Windows.Forms.GroupBox();
-            this.Clm_Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_Departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_Local = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_NumeroSerie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_Observacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_NumeroBp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_RespAdd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_UserResp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_AtivoAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_DataInc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clm_Ativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Btn_CarregarQwerty = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -115,20 +102,6 @@
             // Dgv_DataRecursos
             // 
             this.Dgv_DataRecursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_DataRecursos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Clm_Nome,
-            this.Clm_Categoria,
-            this.Clm_Tipo,
-            this.Clm_Departamento,
-            this.Clm_Local,
-            this.Clm_NumeroSerie,
-            this.Clm_Observacao,
-            this.Clm_NumeroBp,
-            this.Clm_RespAdd,
-            this.Clm_UserResp,
-            this.Clm_AtivoAd,
-            this.Clm_DataInc,
-            this.Clm_Ativo});
             this.Dgv_DataRecursos.Location = new System.Drawing.Point(12, 142);
             this.Dgv_DataRecursos.Name = "Dgv_DataRecursos";
             this.Dgv_DataRecursos.RowHeadersWidth = 51;
@@ -144,84 +117,6 @@
             this.Gpr_FiltroData.TabIndex = 3;
             this.Gpr_FiltroData.TabStop = false;
             this.Gpr_FiltroData.Text = "Filtros";
-            // 
-            // Clm_Nome
-            // 
-            this.Clm_Nome.HeaderText = "Nome";
-            this.Clm_Nome.Name = "Clm_Nome";
-            this.Clm_Nome.ReadOnly = true;
-            // 
-            // Clm_Categoria
-            // 
-            this.Clm_Categoria.HeaderText = "Categoria";
-            this.Clm_Categoria.Name = "Clm_Categoria";
-            this.Clm_Categoria.ReadOnly = true;
-            // 
-            // Clm_Tipo
-            // 
-            this.Clm_Tipo.HeaderText = "Tipo";
-            this.Clm_Tipo.Name = "Clm_Tipo";
-            this.Clm_Tipo.ReadOnly = true;
-            // 
-            // Clm_Departamento
-            // 
-            this.Clm_Departamento.HeaderText = "Departamento";
-            this.Clm_Departamento.Name = "Clm_Departamento";
-            this.Clm_Departamento.ReadOnly = true;
-            // 
-            // Clm_Local
-            // 
-            this.Clm_Local.HeaderText = "Local";
-            this.Clm_Local.Name = "Clm_Local";
-            this.Clm_Local.ReadOnly = true;
-            // 
-            // Clm_NumeroSerie
-            // 
-            this.Clm_NumeroSerie.HeaderText = "Número de série";
-            this.Clm_NumeroSerie.Name = "Clm_NumeroSerie";
-            this.Clm_NumeroSerie.ReadOnly = true;
-            // 
-            // Clm_Observacao
-            // 
-            this.Clm_Observacao.HeaderText = "Observacao";
-            this.Clm_Observacao.Name = "Clm_Observacao";
-            this.Clm_Observacao.ReadOnly = true;
-            // 
-            // Clm_NumeroBp
-            // 
-            this.Clm_NumeroBp.HeaderText = "Bem Patrimônial";
-            this.Clm_NumeroBp.Name = "Clm_NumeroBp";
-            this.Clm_NumeroBp.ReadOnly = true;
-            // 
-            // Clm_RespAdd
-            // 
-            this.Clm_RespAdd.HeaderText = "Responsável";
-            this.Clm_RespAdd.Name = "Clm_RespAdd";
-            this.Clm_RespAdd.ReadOnly = true;
-            // 
-            // Clm_UserResp
-            // 
-            this.Clm_UserResp.HeaderText = "Usuário Responsável";
-            this.Clm_UserResp.Name = "Clm_UserResp";
-            this.Clm_UserResp.ReadOnly = true;
-            // 
-            // Clm_AtivoAd
-            // 
-            this.Clm_AtivoAd.HeaderText = "Status AD";
-            this.Clm_AtivoAd.Name = "Clm_AtivoAd";
-            this.Clm_AtivoAd.ReadOnly = true;
-            // 
-            // Clm_DataInc
-            // 
-            this.Clm_DataInc.HeaderText = "Data Incluído";
-            this.Clm_DataInc.Name = "Clm_DataInc";
-            this.Clm_DataInc.ReadOnly = true;
-            // 
-            // Clm_Ativo
-            // 
-            this.Clm_Ativo.HeaderText = "Status Ativos";
-            this.Clm_Ativo.Name = "Clm_Ativo";
-            this.Clm_Ativo.ReadOnly = true;
             // 
             // Btn_CarregarQwerty
             // 
@@ -268,19 +163,6 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Sair;
         private System.Windows.Forms.DataGridView Dgv_DataRecursos;
         private System.Windows.Forms.GroupBox Gpr_FiltroData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_Nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_Categoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_Tipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_Departamento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_Local;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_NumeroSerie;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_Observacao;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_NumeroBp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_RespAdd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_UserResp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_AtivoAd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_DataInc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clm_Ativo;
         private System.Windows.Forms.Button Btn_CarregarQwerty;
     }
 }
