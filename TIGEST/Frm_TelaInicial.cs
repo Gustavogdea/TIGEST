@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TIGEST.Functions;
+
 
 namespace TIGEST
 {
@@ -33,6 +35,22 @@ namespace TIGEST
             Thread.Sleep(100);
             recursosAtivos.Show();
             Thread.Sleep(500);
+        }
+
+        private void Btn_GestaoUsuarios_Click(object sender, EventArgs e)
+        {
+            Frm_GestaoUsuarios gestaoUsuarios = new Frm_GestaoUsuarios();
+            var max = 100;
+
+            Prb_LoadProcess.Maximum = max;
+
+            for (int i = 10; i < 100; i++)
+            {
+                Thread.Sleep(1);
+                Prb_LoadProcess.Value = i;
+            }
+            Thread.Sleep(100);
+            gestaoUsuarios.Show();
         }
     }
 }

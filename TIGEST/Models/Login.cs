@@ -1,6 +1,6 @@
 using System.Data.SqlClient;
 using System.Runtime.Remoting;
-namespace TIGEST.Model
+namespace TIGEST.Models
 {
     internal class Login : Conexao
     {

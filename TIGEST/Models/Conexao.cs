@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace TIGEST.Model
+namespace TIGEST.Models
 {
     internal class Conexao
     {
