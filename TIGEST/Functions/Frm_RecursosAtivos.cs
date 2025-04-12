@@ -28,8 +28,15 @@ namespace TIGEST
 
         private void Btn_CarregarQwerty_Click(object sender, EventArgs e)
         {
+            string nomeObjeto = Txt_NomeObjeto.Text;
+            string numSerie = Txt_NumSerie.Text;
+            string numBP = Txt_NumBP.Text;
+            bool ativoAd = Ckb_AtivoAd.Checked ? true : false;
+            bool excluidoAd = Ckb_NaoAtivoAd.Checked ? true : false;
+            bool naoAplicaAd = Ckb_NaAtivoAd.Checked ? true : false;
+
             Dados dados = new Dados();
-            DataTable tabela = dados.CarregarDadosAtivos();
+            DataTable tabela = dados.CarregarDadosAtivos(nomeObjeto, numSerie, numBP, ativoAd, excluidoAd, naoAplicaAd);
 
             if (tabela.Rows.Count > 0)
             {

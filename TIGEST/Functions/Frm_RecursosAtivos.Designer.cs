@@ -37,21 +37,21 @@
             this.Menu_Sair = new System.Windows.Forms.ToolStripMenuItem();
             this.Dgv_DataRecursos = new System.Windows.Forms.DataGridView();
             this.Gpr_FiltroData = new System.Windows.Forms.GroupBox();
-            this.Btn_CarregarQwerty = new System.Windows.Forms.Button();
-            this.Gpb_FiltrosAtivo = new System.Windows.Forms.GroupBox();
-            this.Ckb_NaoAtivoAd = new System.Windows.Forms.CheckBox();
-            this.Ckb_AtivoAd = new System.Windows.Forms.CheckBox();
-            this.Ckb_NaAtivoAd = new System.Windows.Forms.CheckBox();
-            this.Txt_NomeObjeto = new System.Windows.Forms.TextBox();
-            this.Lbl_NomeObjeto = new System.Windows.Forms.Label();
-            this.Dtp_Inicio = new System.Windows.Forms.DateTimePicker();
-            this.Dtp_Fim = new System.Windows.Forms.DateTimePicker();
-            this.Txt_NumSerie = new System.Windows.Forms.TextBox();
-            this.Lbl_NumSerie = new System.Windows.Forms.Label();
-            this.Ckb_DataInicio = new System.Windows.Forms.CheckBox();
-            this.Ckb_DataFim = new System.Windows.Forms.CheckBox();
-            this.Txt_NumBP = new System.Windows.Forms.TextBox();
             this.Lbl_NumBP = new System.Windows.Forms.Label();
+            this.Txt_NumBP = new System.Windows.Forms.TextBox();
+            this.Ckb_DataFim = new System.Windows.Forms.CheckBox();
+            this.Ckb_DataInicio = new System.Windows.Forms.CheckBox();
+            this.Lbl_NumSerie = new System.Windows.Forms.Label();
+            this.Txt_NumSerie = new System.Windows.Forms.TextBox();
+            this.Dtp_Fim = new System.Windows.Forms.DateTimePicker();
+            this.Dtp_Inicio = new System.Windows.Forms.DateTimePicker();
+            this.Lbl_NomeObjeto = new System.Windows.Forms.Label();
+            this.Txt_NomeObjeto = new System.Windows.Forms.TextBox();
+            this.Gpb_FiltrosAtivo = new System.Windows.Forms.GroupBox();
+            this.Ckb_NaAtivoAd = new System.Windows.Forms.CheckBox();
+            this.Ckb_AtivoAd = new System.Windows.Forms.CheckBox();
+            this.Ckb_NaoAtivoAd = new System.Windows.Forms.CheckBox();
+            this.Btn_CarregarQwerty = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_DataRecursos)).BeginInit();
@@ -144,15 +144,91 @@
             this.Gpr_FiltroData.TabStop = false;
             this.Gpr_FiltroData.Text = "Filtros";
             // 
-            // Btn_CarregarQwerty
+            // Lbl_NumBP
             // 
-            this.Btn_CarregarQwerty.Location = new System.Drawing.Point(35, 38);
-            this.Btn_CarregarQwerty.Name = "Btn_CarregarQwerty";
-            this.Btn_CarregarQwerty.Size = new System.Drawing.Size(75, 43);
-            this.Btn_CarregarQwerty.TabIndex = 0;
-            this.Btn_CarregarQwerty.Text = "Carregar";
-            this.Btn_CarregarQwerty.UseVisualStyleBackColor = true;
-            this.Btn_CarregarQwerty.Click += new System.EventHandler(this.Btn_CarregarQwerty_Click);
+            this.Lbl_NumBP.AutoSize = true;
+            this.Lbl_NumBP.Location = new System.Drawing.Point(687, 22);
+            this.Lbl_NumBP.Name = "Lbl_NumBP";
+            this.Lbl_NumBP.Size = new System.Drawing.Size(61, 13);
+            this.Lbl_NumBP.TabIndex = 14;
+            this.Lbl_NumBP.Text = "Número BP";
+            // 
+            // Txt_NumBP
+            // 
+            this.Txt_NumBP.Location = new System.Drawing.Point(690, 38);
+            this.Txt_NumBP.Name = "Txt_NumBP";
+            this.Txt_NumBP.Size = new System.Drawing.Size(101, 20);
+            this.Txt_NumBP.TabIndex = 13;
+            // 
+            // Ckb_DataFim
+            // 
+            this.Ckb_DataFim.AutoSize = true;
+            this.Ckb_DataFim.Location = new System.Drawing.Point(919, 71);
+            this.Ckb_DataFim.Name = "Ckb_DataFim";
+            this.Ckb_DataFim.Size = new System.Drawing.Size(68, 17);
+            this.Ckb_DataFim.TabIndex = 12;
+            this.Ckb_DataFim.Text = "Data Fim";
+            this.Ckb_DataFim.UseVisualStyleBackColor = true;
+            // 
+            // Ckb_DataInicio
+            // 
+            this.Ckb_DataInicio.AutoSize = true;
+            this.Ckb_DataInicio.Location = new System.Drawing.Point(919, 22);
+            this.Ckb_DataInicio.Name = "Ckb_DataInicio";
+            this.Ckb_DataInicio.Size = new System.Drawing.Size(79, 17);
+            this.Ckb_DataInicio.TabIndex = 11;
+            this.Ckb_DataInicio.Text = "Data Início";
+            this.Ckb_DataInicio.UseVisualStyleBackColor = true;
+            // 
+            // Lbl_NumSerie
+            // 
+            this.Lbl_NumSerie.AutoSize = true;
+            this.Lbl_NumSerie.Location = new System.Drawing.Point(431, 72);
+            this.Lbl_NumSerie.Name = "Lbl_NumSerie";
+            this.Lbl_NumSerie.Size = new System.Drawing.Size(86, 13);
+            this.Lbl_NumSerie.TabIndex = 10;
+            this.Lbl_NumSerie.Text = "Número de Série";
+            // 
+            // Txt_NumSerie
+            // 
+            this.Txt_NumSerie.Location = new System.Drawing.Point(434, 88);
+            this.Txt_NumSerie.Name = "Txt_NumSerie";
+            this.Txt_NumSerie.Size = new System.Drawing.Size(203, 20);
+            this.Txt_NumSerie.TabIndex = 9;
+            // 
+            // Dtp_Fim
+            // 
+            this.Dtp_Fim.CustomFormat = "dd/M/aaaa";
+            this.Dtp_Fim.Location = new System.Drawing.Point(919, 91);
+            this.Dtp_Fim.Name = "Dtp_Fim";
+            this.Dtp_Fim.Size = new System.Drawing.Size(227, 20);
+            this.Dtp_Fim.TabIndex = 7;
+            this.Dtp_Fim.Enabled = false;
+            // 
+            // Dtp_Inicio
+            // 
+            this.Dtp_Inicio.CustomFormat = "dd/M/aaaa";
+            this.Dtp_Inicio.Location = new System.Drawing.Point(919, 41);
+            this.Dtp_Inicio.Name = "Dtp_Inicio";
+            this.Dtp_Inicio.Size = new System.Drawing.Size(227, 20);
+            this.Dtp_Inicio.TabIndex = 5;
+            this.Dtp_Inicio.Enabled = false;
+            // 
+            // Lbl_NomeObjeto
+            // 
+            this.Lbl_NomeObjeto.AutoSize = true;
+            this.Lbl_NomeObjeto.Location = new System.Drawing.Point(431, 22);
+            this.Lbl_NomeObjeto.Name = "Lbl_NomeObjeto";
+            this.Lbl_NomeObjeto.Size = new System.Drawing.Size(84, 13);
+            this.Lbl_NomeObjeto.TabIndex = 4;
+            this.Lbl_NomeObjeto.Text = "Nome do Objeto";
+            // 
+            // Txt_NomeObjeto
+            // 
+            this.Txt_NomeObjeto.Location = new System.Drawing.Point(434, 38);
+            this.Txt_NomeObjeto.Name = "Txt_NomeObjeto";
+            this.Txt_NomeObjeto.Size = new System.Drawing.Size(203, 20);
+            this.Txt_NomeObjeto.TabIndex = 2;
             // 
             // Gpb_FiltrosAtivo
             // 
@@ -166,15 +242,15 @@
             this.Gpb_FiltrosAtivo.TabStop = false;
             this.Gpb_FiltrosAtivo.Text = "AD";
             // 
-            // Ckb_NaoAtivoAd
+            // Ckb_NaAtivoAd
             // 
-            this.Ckb_NaoAtivoAd.AutoSize = true;
-            this.Ckb_NaoAtivoAd.Location = new System.Drawing.Point(20, 22);
-            this.Ckb_NaoAtivoAd.Name = "Ckb_NaoAtivoAd";
-            this.Ckb_NaoAtivoAd.Size = new System.Drawing.Size(101, 17);
-            this.Ckb_NaoAtivoAd.TabIndex = 0;
-            this.Ckb_NaoAtivoAd.Text = "Excluído no AD";
-            this.Ckb_NaoAtivoAd.UseVisualStyleBackColor = true;
+            this.Ckb_NaAtivoAd.AutoSize = true;
+            this.Ckb_NaAtivoAd.Location = new System.Drawing.Point(127, 22);
+            this.Ckb_NaAtivoAd.Name = "Ckb_NaAtivoAd";
+            this.Ckb_NaAtivoAd.Size = new System.Drawing.Size(91, 17);
+            this.Ckb_NaAtivoAd.TabIndex = 2;
+            this.Ckb_NaAtivoAd.Text = "Não se aplica";
+            this.Ckb_NaAtivoAd.UseVisualStyleBackColor = true;
             // 
             // Ckb_AtivoAd
             // 
@@ -188,99 +264,25 @@
             this.Ckb_AtivoAd.Text = "Ativo no AD";
             this.Ckb_AtivoAd.UseVisualStyleBackColor = true;
             // 
-            // Ckb_NaAtivoAd
+            // Ckb_NaoAtivoAd
             // 
-            this.Ckb_NaAtivoAd.AutoSize = true;
-            this.Ckb_NaAtivoAd.Location = new System.Drawing.Point(127, 22);
-            this.Ckb_NaAtivoAd.Name = "Ckb_NaAtivoAd";
-            this.Ckb_NaAtivoAd.Size = new System.Drawing.Size(91, 17);
-            this.Ckb_NaAtivoAd.TabIndex = 2;
-            this.Ckb_NaAtivoAd.Text = "Não se aplica";
-            this.Ckb_NaAtivoAd.UseVisualStyleBackColor = true;
+            this.Ckb_NaoAtivoAd.AutoSize = true;
+            this.Ckb_NaoAtivoAd.Location = new System.Drawing.Point(20, 22);
+            this.Ckb_NaoAtivoAd.Name = "Ckb_NaoAtivoAd";
+            this.Ckb_NaoAtivoAd.Size = new System.Drawing.Size(101, 17);
+            this.Ckb_NaoAtivoAd.TabIndex = 0;
+            this.Ckb_NaoAtivoAd.Text = "Excluído no AD";
+            this.Ckb_NaoAtivoAd.UseVisualStyleBackColor = true;
             // 
-            // Txt_NomeObjeto
+            // Btn_CarregarQwerty
             // 
-            this.Txt_NomeObjeto.Location = new System.Drawing.Point(434, 38);
-            this.Txt_NomeObjeto.Name = "Txt_NomeObjeto";
-            this.Txt_NomeObjeto.Size = new System.Drawing.Size(203, 20);
-            this.Txt_NomeObjeto.TabIndex = 2;
-            // 
-            // Lbl_NomeObjeto
-            // 
-            this.Lbl_NomeObjeto.AutoSize = true;
-            this.Lbl_NomeObjeto.Location = new System.Drawing.Point(431, 22);
-            this.Lbl_NomeObjeto.Name = "Lbl_NomeObjeto";
-            this.Lbl_NomeObjeto.Size = new System.Drawing.Size(84, 13);
-            this.Lbl_NomeObjeto.TabIndex = 4;
-            this.Lbl_NomeObjeto.Text = "Nome do Objeto";
-            // 
-            // Dtp_Inicio
-            // 
-            this.Dtp_Inicio.CustomFormat = "dd/M/aaaa";
-            this.Dtp_Inicio.Location = new System.Drawing.Point(919, 41);
-            this.Dtp_Inicio.Name = "Dtp_Inicio";
-            this.Dtp_Inicio.Size = new System.Drawing.Size(227, 20);
-            this.Dtp_Inicio.TabIndex = 5;
-            // 
-            // Dtp_Fim
-            // 
-            this.Dtp_Fim.CustomFormat = "dd/M/aaaa";
-            this.Dtp_Fim.Location = new System.Drawing.Point(919, 91);
-            this.Dtp_Fim.Name = "Dtp_Fim";
-            this.Dtp_Fim.Size = new System.Drawing.Size(227, 20);
-            this.Dtp_Fim.TabIndex = 7;
-            // 
-            // Txt_NumSerie
-            // 
-            this.Txt_NumSerie.Location = new System.Drawing.Point(434, 88);
-            this.Txt_NumSerie.Name = "Txt_NumSerie";
-            this.Txt_NumSerie.Size = new System.Drawing.Size(203, 20);
-            this.Txt_NumSerie.TabIndex = 9;
-            // 
-            // Lbl_NumSerie
-            // 
-            this.Lbl_NumSerie.AutoSize = true;
-            this.Lbl_NumSerie.Location = new System.Drawing.Point(431, 72);
-            this.Lbl_NumSerie.Name = "Lbl_NumSerie";
-            this.Lbl_NumSerie.Size = new System.Drawing.Size(86, 13);
-            this.Lbl_NumSerie.TabIndex = 10;
-            this.Lbl_NumSerie.Text = "Número de Série";
-            // 
-            // Ckb_DataInicio
-            // 
-            this.Ckb_DataInicio.AutoSize = true;
-            this.Ckb_DataInicio.Location = new System.Drawing.Point(919, 22);
-            this.Ckb_DataInicio.Name = "Ckb_DataInicio";
-            this.Ckb_DataInicio.Size = new System.Drawing.Size(79, 17);
-            this.Ckb_DataInicio.TabIndex = 11;
-            this.Ckb_DataInicio.Text = "Data Início";
-            this.Ckb_DataInicio.UseVisualStyleBackColor = true;
-            // 
-            // Ckb_DataFim
-            // 
-            this.Ckb_DataFim.AutoSize = true;
-            this.Ckb_DataFim.Location = new System.Drawing.Point(919, 71);
-            this.Ckb_DataFim.Name = "Ckb_DataFim";
-            this.Ckb_DataFim.Size = new System.Drawing.Size(68, 17);
-            this.Ckb_DataFim.TabIndex = 12;
-            this.Ckb_DataFim.Text = "Data Fim";
-            this.Ckb_DataFim.UseVisualStyleBackColor = true;
-            // 
-            // Txt_NumBP
-            // 
-            this.Txt_NumBP.Location = new System.Drawing.Point(690, 38);
-            this.Txt_NumBP.Name = "Txt_NumBP";
-            this.Txt_NumBP.Size = new System.Drawing.Size(101, 20);
-            this.Txt_NumBP.TabIndex = 13;
-            // 
-            // Lbl_NumBP
-            // 
-            this.Lbl_NumBP.AutoSize = true;
-            this.Lbl_NumBP.Location = new System.Drawing.Point(687, 22);
-            this.Lbl_NumBP.Name = "Lbl_NumBP";
-            this.Lbl_NumBP.Size = new System.Drawing.Size(61, 13);
-            this.Lbl_NumBP.TabIndex = 14;
-            this.Lbl_NumBP.Text = "Número BP";
+            this.Btn_CarregarQwerty.Location = new System.Drawing.Point(35, 38);
+            this.Btn_CarregarQwerty.Name = "Btn_CarregarQwerty";
+            this.Btn_CarregarQwerty.Size = new System.Drawing.Size(75, 43);
+            this.Btn_CarregarQwerty.TabIndex = 0;
+            this.Btn_CarregarQwerty.Text = "Carregar";
+            this.Btn_CarregarQwerty.UseVisualStyleBackColor = true;
+            this.Btn_CarregarQwerty.Click += new System.EventHandler(this.Btn_CarregarQwerty_Click);
             // 
             // Frm_RecursosAtivos
             // 
