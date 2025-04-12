@@ -71,6 +71,7 @@
             this.txt_Senha.Name = "txt_Senha";
             this.txt_Senha.Size = new System.Drawing.Size(279, 20);
             this.txt_Senha.TabIndex = 3;
+            this.txt_Senha.UseSystemPasswordChar = true;
             // 
             // lbl_Usuario
             // 
@@ -112,7 +113,10 @@
             this.Controls.Add(this.txt_Usuario);
             this.Controls.Add(this.btn_Entrar);
             this.Controls.Add(this.btn_Sair);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login TIGEST";
             this.ResumeLayout(false);
             this.PerformLayout();

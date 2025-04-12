@@ -122,7 +122,7 @@
             // 
             this.Btn_CarregarQwerty.Location = new System.Drawing.Point(19, 28);
             this.Btn_CarregarQwerty.Name = "Btn_CarregarQwerty";
-            this.Btn_CarregarQwerty.Size = new System.Drawing.Size(75, 23);
+            this.Btn_CarregarQwerty.Size = new System.Drawing.Size(75, 33);
             this.Btn_CarregarQwerty.TabIndex = 0;
             this.Btn_CarregarQwerty.Text = "Carregar";
             this.Btn_CarregarQwerty.UseVisualStyleBackColor = true;

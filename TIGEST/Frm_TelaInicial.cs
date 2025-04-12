@@ -33,7 +33,6 @@ namespace TIGEST
             Thread.Sleep(100);
             recursosAtivos.Show();
             Thread.Sleep(500);
-            this.Hide();
         }
     }
 }

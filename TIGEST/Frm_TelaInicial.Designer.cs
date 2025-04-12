@@ -143,6 +143,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Frm_TelaInicial";
             this.Text = "Menu Inicial";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

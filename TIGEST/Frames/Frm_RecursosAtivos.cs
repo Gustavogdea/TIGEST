@@ -21,9 +21,7 @@ namespace TIGEST
 
         private void Menu_Voltar_Click(object sender, EventArgs e)
         {
-            Frm_TelaInicial frm_TelaInicial = new Frm_TelaInicial();
             this.Close();
-            frm_TelaInicial.ShowDialog();
         }
 
         private void Btn_CarregarQwerty_Click(object sender, EventArgs e)
