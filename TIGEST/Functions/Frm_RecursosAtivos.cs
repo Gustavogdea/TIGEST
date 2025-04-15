@@ -38,7 +38,7 @@ namespace TIGEST
             bool ativoAd = Ckb_AtivoAd.Checked ? true : false;
             bool excluidoAd = Ckb_NaoAtivoAd.Checked ? true : false;
             bool naoAplicaAd = Ckb_NaAtivoAd.Checked ? true : false;
-            bool itensDeletados = Ckb_ItensDeletados.Checked ? true : false;
+            bool itensDeletados = Ckb_ItensDeletados.Checked ? false : true;
 
             Dados dados = new Dados();
             DataTable tabela = dados.CarregarDadosAtivos(nomeObjeto, numSerie, numBP, usuarioResp, usuarioTIResp, localizacao, departamento, ativoAd, excluidoAd, naoAplicaAd, itensDeletados);
@@ -57,7 +57,6 @@ namespace TIGEST
                     Dgv_DataRecursos.Rows[index].Cells["Cln_Local"].Value = row["Local"];
                     Dgv_DataRecursos.Rows[index].Cells["Cln_NumeroSerie"].Value = row["Número de Série"];
                     Dgv_DataRecursos.Rows[index].Cells["Cln_NumeroBP"].Value = row["N° BP"];
-                    Dgv_DataRecursos.Rows[index].Cells["Cln_Observacao"].Value = row["Observacao"];
                     Dgv_DataRecursos.Rows[index].Cells["Cln_ResponsavelEquipamento"].Value = row["Responsável"];
                     Dgv_DataRecursos.Rows[index].Cells["Cln_RespTI"].Value = row["Responsável TI"];
                     Dgv_DataRecursos.Rows[index].Cells["Cln_DatReg"].Value = row["Data Registro"];
