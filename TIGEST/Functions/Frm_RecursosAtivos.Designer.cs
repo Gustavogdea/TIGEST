@@ -52,11 +52,37 @@
             this.Ckb_AtivoAd = new System.Windows.Forms.CheckBox();
             this.Ckb_NaoAtivoAd = new System.Windows.Forms.CheckBox();
             this.Btn_CarregarQwerty = new System.Windows.Forms.Button();
+            this.Gpb_Deletados = new System.Windows.Forms.GroupBox();
+            this.Ckb_ItensDeletados = new System.Windows.Forms.CheckBox();
+            this.Cln_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_Departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_Local = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_NumeroSerie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_Observacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_NumeroBp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_ResponsavelEquipamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_RespTI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_DatReg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_AtivoAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cln_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gpr_Geografia = new System.Windows.Forms.GroupBox();
+            this.Cbo_Local = new System.Windows.Forms.ComboBox();
+            this.Cbo_Departamento = new System.Windows.Forms.ComboBox();
+            this.Lbl_Local = new System.Windows.Forms.Label();
+            this.Lbl_Departamento = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Lbl_RespTI = new System.Windows.Forms.Label();
+            this.Cbo_RespTI = new System.Windows.Forms.ComboBox();
+            this.Txt_UserResp = new System.Windows.Forms.TextBox();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_DataRecursos)).BeginInit();
             this.Gpr_FiltroData.SuspendLayout();
             this.Gpb_FiltrosAtivo.SuspendLayout();
+            this.Gpb_Deletados.SuspendLayout();
+            this.Gpr_Geografia.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -113,18 +139,43 @@
             this.Menu_Sair.Name = "Menu_Sair";
             this.Menu_Sair.Size = new System.Drawing.Size(38, 20);
             this.Menu_Sair.Text = "Sair";
+            this.Menu_Sair.Click += new System.EventHandler(this.Menu_Sair_Click);
             // 
             // Dgv_DataRecursos
             // 
+            this.Dgv_DataRecursos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_DataRecursos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.Dgv_DataRecursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_DataRecursos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Cln_Name,
+            this.Cln_Categoria,
+            this.Cln_Tipo,
+            this.Cln_Departamento,
+            this.Cln_Local,
+            this.Cln_NumeroSerie,
+            this.Cln_Observacao,
+            this.Cln_NumeroBp,
+            this.Cln_ResponsavelEquipamento,
+            this.Cln_RespTI,
+            this.Cln_DatReg,
+            this.Cln_AtivoAd,
+            this.Cln_Status});
             this.Dgv_DataRecursos.Location = new System.Drawing.Point(12, 179);
             this.Dgv_DataRecursos.Name = "Dgv_DataRecursos";
+            this.Dgv_DataRecursos.ReadOnly = true;
+            this.Dgv_DataRecursos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.Dgv_DataRecursos.RowHeadersWidth = 51;
             this.Dgv_DataRecursos.Size = new System.Drawing.Size(1390, 439);
             this.Dgv_DataRecursos.TabIndex = 2;
             // 
             // Gpr_FiltroData
             // 
+            this.Gpr_FiltroData.Controls.Add(this.Txt_UserResp);
+            this.Gpr_FiltroData.Controls.Add(this.label1);
+            this.Gpr_FiltroData.Controls.Add(this.Lbl_RespTI);
+            this.Gpr_FiltroData.Controls.Add(this.Gpr_Geografia);
+            this.Gpr_FiltroData.Controls.Add(this.Cbo_RespTI);
+            this.Gpr_FiltroData.Controls.Add(this.Gpb_Deletados);
             this.Gpr_FiltroData.Controls.Add(this.Lbl_NumBP);
             this.Gpr_FiltroData.Controls.Add(this.Txt_NumBP);
             this.Gpr_FiltroData.Controls.Add(this.Ckb_DataFim);
@@ -147,7 +198,7 @@
             // Lbl_NumBP
             // 
             this.Lbl_NumBP.AutoSize = true;
-            this.Lbl_NumBP.Location = new System.Drawing.Point(687, 22);
+            this.Lbl_NumBP.Location = new System.Drawing.Point(591, 23);
             this.Lbl_NumBP.Name = "Lbl_NumBP";
             this.Lbl_NumBP.Size = new System.Drawing.Size(61, 13);
             this.Lbl_NumBP.TabIndex = 14;
@@ -155,7 +206,7 @@
             // 
             // Txt_NumBP
             // 
-            this.Txt_NumBP.Location = new System.Drawing.Point(690, 38);
+            this.Txt_NumBP.Location = new System.Drawing.Point(594, 39);
             this.Txt_NumBP.Name = "Txt_NumBP";
             this.Txt_NumBP.Size = new System.Drawing.Size(101, 20);
             this.Txt_NumBP.TabIndex = 13;
@@ -163,7 +214,7 @@
             // Ckb_DataFim
             // 
             this.Ckb_DataFim.AutoSize = true;
-            this.Ckb_DataFim.Location = new System.Drawing.Point(919, 71);
+            this.Ckb_DataFim.Location = new System.Drawing.Point(712, 71);
             this.Ckb_DataFim.Name = "Ckb_DataFim";
             this.Ckb_DataFim.Size = new System.Drawing.Size(68, 17);
             this.Ckb_DataFim.TabIndex = 12;
@@ -173,7 +224,7 @@
             // Ckb_DataInicio
             // 
             this.Ckb_DataInicio.AutoSize = true;
-            this.Ckb_DataInicio.Location = new System.Drawing.Point(919, 22);
+            this.Ckb_DataInicio.Location = new System.Drawing.Point(712, 22);
             this.Ckb_DataInicio.Name = "Ckb_DataInicio";
             this.Ckb_DataInicio.Size = new System.Drawing.Size(79, 17);
             this.Ckb_DataInicio.TabIndex = 11;
@@ -183,7 +234,7 @@
             // Lbl_NumSerie
             // 
             this.Lbl_NumSerie.AutoSize = true;
-            this.Lbl_NumSerie.Location = new System.Drawing.Point(431, 72);
+            this.Lbl_NumSerie.Location = new System.Drawing.Point(365, 73);
             this.Lbl_NumSerie.Name = "Lbl_NumSerie";
             this.Lbl_NumSerie.Size = new System.Drawing.Size(86, 13);
             this.Lbl_NumSerie.TabIndex = 10;
@@ -191,7 +242,7 @@
             // 
             // Txt_NumSerie
             // 
-            this.Txt_NumSerie.Location = new System.Drawing.Point(434, 88);
+            this.Txt_NumSerie.Location = new System.Drawing.Point(368, 89);
             this.Txt_NumSerie.Name = "Txt_NumSerie";
             this.Txt_NumSerie.Size = new System.Drawing.Size(203, 20);
             this.Txt_NumSerie.TabIndex = 9;
@@ -199,25 +250,25 @@
             // Dtp_Fim
             // 
             this.Dtp_Fim.CustomFormat = "dd/M/aaaa";
-            this.Dtp_Fim.Location = new System.Drawing.Point(919, 91);
+            this.Dtp_Fim.Enabled = false;
+            this.Dtp_Fim.Location = new System.Drawing.Point(712, 91);
             this.Dtp_Fim.Name = "Dtp_Fim";
             this.Dtp_Fim.Size = new System.Drawing.Size(227, 20);
             this.Dtp_Fim.TabIndex = 7;
-            this.Dtp_Fim.Enabled = false;
             // 
             // Dtp_Inicio
             // 
             this.Dtp_Inicio.CustomFormat = "dd/M/aaaa";
-            this.Dtp_Inicio.Location = new System.Drawing.Point(919, 41);
+            this.Dtp_Inicio.Enabled = false;
+            this.Dtp_Inicio.Location = new System.Drawing.Point(712, 41);
             this.Dtp_Inicio.Name = "Dtp_Inicio";
             this.Dtp_Inicio.Size = new System.Drawing.Size(227, 20);
             this.Dtp_Inicio.TabIndex = 5;
-            this.Dtp_Inicio.Enabled = false;
             // 
             // Lbl_NomeObjeto
             // 
             this.Lbl_NomeObjeto.AutoSize = true;
-            this.Lbl_NomeObjeto.Location = new System.Drawing.Point(431, 22);
+            this.Lbl_NomeObjeto.Location = new System.Drawing.Point(365, 23);
             this.Lbl_NomeObjeto.Name = "Lbl_NomeObjeto";
             this.Lbl_NomeObjeto.Size = new System.Drawing.Size(84, 13);
             this.Lbl_NomeObjeto.TabIndex = 4;
@@ -225,7 +276,7 @@
             // 
             // Txt_NomeObjeto
             // 
-            this.Txt_NomeObjeto.Location = new System.Drawing.Point(434, 38);
+            this.Txt_NomeObjeto.Location = new System.Drawing.Point(368, 39);
             this.Txt_NomeObjeto.Name = "Txt_NomeObjeto";
             this.Txt_NomeObjeto.Size = new System.Drawing.Size(203, 20);
             this.Txt_NomeObjeto.TabIndex = 2;
@@ -235,9 +286,9 @@
             this.Gpb_FiltrosAtivo.Controls.Add(this.Ckb_NaAtivoAd);
             this.Gpb_FiltrosAtivo.Controls.Add(this.Ckb_AtivoAd);
             this.Gpb_FiltrosAtivo.Controls.Add(this.Ckb_NaoAtivoAd);
-            this.Gpb_FiltrosAtivo.Location = new System.Drawing.Point(143, 19);
+            this.Gpb_FiltrosAtivo.Location = new System.Drawing.Point(116, 19);
             this.Gpb_FiltrosAtivo.Name = "Gpb_FiltrosAtivo";
-            this.Gpb_FiltrosAtivo.Size = new System.Drawing.Size(238, 78);
+            this.Gpb_FiltrosAtivo.Size = new System.Drawing.Size(238, 68);
             this.Gpb_FiltrosAtivo.TabIndex = 1;
             this.Gpb_FiltrosAtivo.TabStop = false;
             this.Gpb_FiltrosAtivo.Text = "AD";
@@ -276,13 +327,192 @@
             // 
             // Btn_CarregarQwerty
             // 
-            this.Btn_CarregarQwerty.Location = new System.Drawing.Point(35, 38);
+            this.Btn_CarregarQwerty.Location = new System.Drawing.Point(21, 48);
             this.Btn_CarregarQwerty.Name = "Btn_CarregarQwerty";
-            this.Btn_CarregarQwerty.Size = new System.Drawing.Size(75, 43);
+            this.Btn_CarregarQwerty.Size = new System.Drawing.Size(75, 60);
             this.Btn_CarregarQwerty.TabIndex = 0;
             this.Btn_CarregarQwerty.Text = "Carregar";
             this.Btn_CarregarQwerty.UseVisualStyleBackColor = true;
             this.Btn_CarregarQwerty.Click += new System.EventHandler(this.Btn_CarregarQwerty_Click);
+            // 
+            // Gpb_Deletados
+            // 
+            this.Gpb_Deletados.Controls.Add(this.Ckb_ItensDeletados);
+            this.Gpb_Deletados.Location = new System.Drawing.Point(116, 87);
+            this.Gpb_Deletados.Name = "Gpb_Deletados";
+            this.Gpb_Deletados.Size = new System.Drawing.Size(238, 53);
+            this.Gpb_Deletados.TabIndex = 15;
+            this.Gpb_Deletados.TabStop = false;
+            this.Gpb_Deletados.Text = "Deletados";
+            // 
+            // Ckb_ItensDeletados
+            // 
+            this.Ckb_ItensDeletados.AutoSize = true;
+            this.Ckb_ItensDeletados.Location = new System.Drawing.Point(20, 19);
+            this.Ckb_ItensDeletados.Name = "Ckb_ItensDeletados";
+            this.Ckb_ItensDeletados.Size = new System.Drawing.Size(100, 17);
+            this.Ckb_ItensDeletados.TabIndex = 1;
+            this.Ckb_ItensDeletados.Text = "Itens Deletados";
+            this.Ckb_ItensDeletados.UseVisualStyleBackColor = true;
+            // 
+            // Cln_Name
+            // 
+            this.Cln_Name.HeaderText = "Nome";
+            this.Cln_Name.Name = "Cln_Name";
+            this.Cln_Name.ReadOnly = true;
+            // 
+            // Cln_Categoria
+            // 
+            this.Cln_Categoria.HeaderText = "Categoria";
+            this.Cln_Categoria.Name = "Cln_Categoria";
+            this.Cln_Categoria.ReadOnly = true;
+            // 
+            // Cln_Tipo
+            // 
+            this.Cln_Tipo.HeaderText = "Tipo Equipamento";
+            this.Cln_Tipo.MinimumWidth = 30;
+            this.Cln_Tipo.Name = "Cln_Tipo";
+            this.Cln_Tipo.ReadOnly = true;
+            // 
+            // Cln_Departamento
+            // 
+            this.Cln_Departamento.HeaderText = "Departamento";
+            this.Cln_Departamento.Name = "Cln_Departamento";
+            this.Cln_Departamento.ReadOnly = true;
+            // 
+            // Cln_Local
+            // 
+            this.Cln_Local.HeaderText = "Localização";
+            this.Cln_Local.Name = "Cln_Local";
+            this.Cln_Local.ReadOnly = true;
+            // 
+            // Cln_NumeroSerie
+            // 
+            this.Cln_NumeroSerie.HeaderText = "Numero de Série";
+            this.Cln_NumeroSerie.Name = "Cln_NumeroSerie";
+            this.Cln_NumeroSerie.ReadOnly = true;
+            // 
+            // Cln_Observacao
+            // 
+            this.Cln_Observacao.HeaderText = "Observação";
+            this.Cln_Observacao.Name = "Cln_Observacao";
+            this.Cln_Observacao.ReadOnly = true;
+            // 
+            // Cln_NumeroBp
+            // 
+            this.Cln_NumeroBp.HeaderText = "Numero BP";
+            this.Cln_NumeroBp.Name = "Cln_NumeroBp";
+            this.Cln_NumeroBp.ReadOnly = true;
+            // 
+            // Cln_ResponsavelEquipamento
+            // 
+            this.Cln_ResponsavelEquipamento.HeaderText = "Responsável";
+            this.Cln_ResponsavelEquipamento.Name = "Cln_ResponsavelEquipamento";
+            this.Cln_ResponsavelEquipamento.ReadOnly = true;
+            // 
+            // Cln_RespTI
+            // 
+            this.Cln_RespTI.HeaderText = "TI Responsável";
+            this.Cln_RespTI.Name = "Cln_RespTI";
+            this.Cln_RespTI.ReadOnly = true;
+            // 
+            // Cln_DatReg
+            // 
+            this.Cln_DatReg.HeaderText = "Data Registrada";
+            this.Cln_DatReg.Name = "Cln_DatReg";
+            this.Cln_DatReg.ReadOnly = true;
+            // 
+            // Cln_AtivoAd
+            // 
+            this.Cln_AtivoAd.HeaderText = "Ativo AD";
+            this.Cln_AtivoAd.Name = "Cln_AtivoAd";
+            this.Cln_AtivoAd.ReadOnly = true;
+            // 
+            // Cln_Status
+            // 
+            this.Cln_Status.HeaderText = "Status";
+            this.Cln_Status.Name = "Cln_Status";
+            this.Cln_Status.ReadOnly = true;
+            // 
+            // Gpr_Geografia
+            // 
+            this.Gpr_Geografia.Controls.Add(this.Lbl_Departamento);
+            this.Gpr_Geografia.Controls.Add(this.Lbl_Local);
+            this.Gpr_Geografia.Controls.Add(this.Cbo_Departamento);
+            this.Gpr_Geografia.Controls.Add(this.Cbo_Local);
+            this.Gpr_Geografia.Location = new System.Drawing.Point(970, 19);
+            this.Gpr_Geografia.Name = "Gpr_Geografia";
+            this.Gpr_Geografia.Size = new System.Drawing.Size(159, 120);
+            this.Gpr_Geografia.TabIndex = 16;
+            this.Gpr_Geografia.TabStop = false;
+            this.Gpr_Geografia.Text = "Geografia do Equipamento";
+            // 
+            // Cbo_Local
+            // 
+            this.Cbo_Local.FormattingEnabled = true;
+            this.Cbo_Local.Location = new System.Drawing.Point(16, 46);
+            this.Cbo_Local.Name = "Cbo_Local";
+            this.Cbo_Local.Size = new System.Drawing.Size(121, 21);
+            this.Cbo_Local.TabIndex = 0;
+            // 
+            // Cbo_Departamento
+            // 
+            this.Cbo_Departamento.FormattingEnabled = true;
+            this.Cbo_Departamento.Location = new System.Drawing.Point(16, 88);
+            this.Cbo_Departamento.Name = "Cbo_Departamento";
+            this.Cbo_Departamento.Size = new System.Drawing.Size(121, 21);
+            this.Cbo_Departamento.TabIndex = 1;
+            // 
+            // Lbl_Local
+            // 
+            this.Lbl_Local.AutoSize = true;
+            this.Lbl_Local.Location = new System.Drawing.Point(13, 30);
+            this.Lbl_Local.Name = "Lbl_Local";
+            this.Lbl_Local.Size = new System.Drawing.Size(64, 13);
+            this.Lbl_Local.TabIndex = 15;
+            this.Lbl_Local.Text = "Localização";
+            // 
+            // Lbl_Departamento
+            // 
+            this.Lbl_Departamento.AutoSize = true;
+            this.Lbl_Departamento.Location = new System.Drawing.Point(13, 72);
+            this.Lbl_Departamento.Name = "Lbl_Departamento";
+            this.Lbl_Departamento.Size = new System.Drawing.Size(74, 13);
+            this.Lbl_Departamento.TabIndex = 16;
+            this.Lbl_Departamento.Text = "Departamento";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1152, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Usuário Responsável";
+            // 
+            // Lbl_RespTI
+            // 
+            this.Lbl_RespTI.AutoSize = true;
+            this.Lbl_RespTI.Location = new System.Drawing.Point(1152, 26);
+            this.Lbl_RespTI.Name = "Lbl_RespTI";
+            this.Lbl_RespTI.Size = new System.Drawing.Size(82, 13);
+            this.Lbl_RespTI.TabIndex = 15;
+            this.Lbl_RespTI.Text = "Responsável TI";
+            // 
+            // Cbo_RespTI
+            // 
+            this.Cbo_RespTI.FormattingEnabled = true;
+            this.Cbo_RespTI.Location = new System.Drawing.Point(1155, 42);
+            this.Cbo_RespTI.Name = "Cbo_RespTI";
+            this.Cbo_RespTI.Size = new System.Drawing.Size(182, 21);
+            this.Cbo_RespTI.TabIndex = 0;
+            // 
+            // Txt_UserResp
+            // 
+            this.Txt_UserResp.Location = new System.Drawing.Point(1155, 84);
+            this.Txt_UserResp.Name = "Txt_UserResp";
+            this.Txt_UserResp.Size = new System.Drawing.Size(182, 20);
+            this.Txt_UserResp.TabIndex = 17;
             // 
             // Frm_RecursosAtivos
             // 
@@ -306,6 +536,10 @@
             this.Gpr_FiltroData.PerformLayout();
             this.Gpb_FiltrosAtivo.ResumeLayout(false);
             this.Gpb_FiltrosAtivo.PerformLayout();
+            this.Gpb_Deletados.ResumeLayout(false);
+            this.Gpb_Deletados.PerformLayout();
+            this.Gpr_Geografia.ResumeLayout(false);
+            this.Gpr_Geografia.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,5 +571,29 @@
         private System.Windows.Forms.DateTimePicker Dtp_Inicio;
         private System.Windows.Forms.Label Lbl_NumBP;
         private System.Windows.Forms.TextBox Txt_NumBP;
+        private System.Windows.Forms.GroupBox Gpb_Deletados;
+        private System.Windows.Forms.CheckBox Ckb_ItensDeletados;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_Categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_Tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_Departamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_Local;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_NumeroSerie;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_Observacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_NumeroBp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_ResponsavelEquipamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_RespTI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_DatReg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_AtivoAd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cln_Status;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Lbl_RespTI;
+        private System.Windows.Forms.ComboBox Cbo_RespTI;
+        private System.Windows.Forms.GroupBox Gpr_Geografia;
+        private System.Windows.Forms.Label Lbl_Departamento;
+        private System.Windows.Forms.Label Lbl_Local;
+        private System.Windows.Forms.ComboBox Cbo_Departamento;
+        private System.Windows.Forms.ComboBox Cbo_Local;
+        private System.Windows.Forms.TextBox Txt_UserResp;
     }
 }
