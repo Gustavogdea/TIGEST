@@ -1,1 +1,5 @@
-/vs
+.vs
+
+TIGEST/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+
+TIGEST/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
