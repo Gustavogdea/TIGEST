@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TIGEST</RootNamespace>
     <AssemblyName>TIGEST</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,17 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Conexao.cs" />
+    <Compile Include="Models\Conexao.cs" />
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Login.Designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Frm_RecursosAtivos.cs">
+    <Compile Include="Functions\Frm_RecursosAtivos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Frm_RecursosAtivos.Designer.cs">
+    <Compile Include="Functions\Frm_RecursosAtivos.Designer.cs">
       <DependentUpon>Frm_RecursosAtivos.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_TelaInicial.cs">
@@ -65,14 +67,14 @@
     <Compile Include="Frm_TelaInicial.Designer.cs">
       <DependentUpon>Frm_TelaInicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Dados.cs" />
-    <Compile Include="Model\Login.cs" />
+    <Compile Include="Models\Dados.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Frm_RecursosAtivos.resx">
+    <EmbeddedResource Include="Functions\Frm_RecursosAtivos.resx">
       <DependentUpon>Frm_RecursosAtivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_TelaInicial.resx">
@@ -100,8 +102,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AppCode\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

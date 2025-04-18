@@ -79,7 +79,7 @@
             // lbl_Status
             // 
             this.lbl_Status.Name = "lbl_Status";
-            this.lbl_Status.Size = new System.Drawing.Size(99, 17);
+            this.lbl_Status.Size = new System.Drawing.Size(101, 17);
             this.lbl_Status.Text = "TIGEST 0.1 Build 1";
             // 
             // Prb_LoadProcess
@@ -128,6 +128,7 @@
             this.Btn_GestaoUsuarios.TabIndex = 5;
             this.Btn_GestaoUsuarios.Text = "Usuários";
             this.Btn_GestaoUsuarios.UseVisualStyleBackColor = true;
+            this.Btn_GestaoUsuarios.Click += new System.EventHandler(this.Btn_GestaoUsuarios_Click);
             // 
             // Frm_TelaInicial
             // 

@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace TIGEST
 {
     public partial class Frm_TelaInicial : Form
@@ -33,6 +34,11 @@ namespace TIGEST
             Thread.Sleep(100);
             recursosAtivos.Show();
             Thread.Sleep(500);
+        }
+
+        private void Btn_GestaoUsuarios_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
