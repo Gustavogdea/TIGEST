@@ -43,3 +43,16 @@ D:\01 - Projetos\TIGEST\TIGEST\obj\Debug\TIGEST.csproj.GenerateResource.cache
 D:\01 - Projetos\TIGEST\TIGEST\obj\Debug\TIGEST.csproj.CoreCompileInputs.cache
 D:\01 - Projetos\TIGEST\TIGEST\obj\Debug\TIGEST.exe
 D:\01 - Projetos\TIGEST\TIGEST\obj\Debug\TIGEST.pdb
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\bin\Debug\TIGEST.exe.config
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\bin\Debug\TIGEST.exe
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\bin\Debug\TIGEST.pdb
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.csproj.AssemblyReference.cache
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.Form1.resources
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.Frm_RecursosAtivos.resources
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.Frm_TelaInicial.resources
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.Properties.Resources.resources
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.csproj.GenerateResource.cache
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.exe
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.pdb
+C:\Users\Gustavo\Documents\TIGEST\TIGEST\obj\Debug\TIGEST.Functions.Frm_Administracao.resources

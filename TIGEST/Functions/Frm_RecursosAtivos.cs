@@ -16,6 +16,7 @@ namespace TIGEST
 {
     public partial class Frm_RecursosAtivos : Form
     {
+        
         public Frm_RecursosAtivos()
         {
             InitializeComponent();
@@ -70,15 +71,14 @@ namespace TIGEST
                 MessageBox.Show("Nenhum dado encontrado na tabela.");
             }
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Menu_Sair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Dtp_Inicio_VisibleChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
